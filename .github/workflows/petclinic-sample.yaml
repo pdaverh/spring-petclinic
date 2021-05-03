@@ -159,6 +159,9 @@ jobs:
           port: ${{ env.APP_PORT }}
           namespace: ${{ env.TEST_NAMESPACE }}
           image: ${{ env.IMAGE_PATH }}
+          registry_username: ${{ env.REGISTRY_USER }}
+          registry_password: ${{ secrets.REGISTRY_PASSWORD }}
+
 
       # Perform a (very) basic integration test.
       # This step is retried since the time to pull the image and start the pod can vary.

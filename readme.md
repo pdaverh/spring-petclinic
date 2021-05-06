@@ -63,4 +63,4 @@ mvn package && docker build . -t petclinic:latest
 docker run -p 8080:8080 petclinic:latest
 ```
 
-After the server starts, the app will be available at `localhost:8080`.
+After the server starts, the app will be available at `localhost:8080` or designated service route.
